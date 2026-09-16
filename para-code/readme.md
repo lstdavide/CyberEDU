@@ -97,3 +97,11 @@ ps does not return any value as it is blacklisted. 'dir' returns the file names.
 As WSTG-INPV-11 (Testing for Code Injection) states, we need to pass %20 and a PHP wildcard, in this case * to test for PHP Injection. To find what command can pass in order for us to get the flag, we need to see what AIX commands we can input. For this we check the IBM AIX documentation and look at the commands section. 'm4' passes and gives us the flag. 'm4', as the documentation defines it is a macro processor used as a preprocessor for C and other languages. You can use it to process built-in macros or user-defined macros.
 
 <img width="1515" height="729" alt="Screenshot from 2026-09-16 09-22-46" src="https://github.com/user-attachments/assets/bab78b7d-0882-4603-8054-f2923b7ad152" />
+
+---
+
+###### References:
+https://www.opencre.org/cre/547-283
+https://cwe.mitre.org/data/definitions/676.html
+https://cwe.mitre.org/data/definitions/78.html
+https://www.ibm.com/docs/en/aix/7.2.0?topic=m-m4-command
